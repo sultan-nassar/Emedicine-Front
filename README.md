@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Sultan Nassar EmedicineFront
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple fullstack project: React as afrontend and ASP.NET API as backend that allows you to create, Edit Delete and display products. It provides a user-friendly interface for entering order information and generates a visually appealing product cart.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Input fields for FirstName,LastName, Email, Password.
+- Upload a profile image for account, and products.
+- A Cart that will show products which you have bought, and give you the option to place orders.
+- An Order list that will show your orders which you have purchased.
+- Pages to manage Allproduct by CRUD actions and buying options by add to Cart.
+- Search Bar and filter option in products page which help you to find the specific product you're looking for.
+- every Order which you have purchased has a status and it is waiting for admin approved, reject...etc
 
-### `npm start`
+## Installation
+<p>
+1. install git on your computer from the link https://git-scm.com/downloads <br>
+2.  Clone the repository to your local machine: <br>
+   
+ 
+### for backend side
+   
+<p> Open a new VS (for backend side) in a new folder <br>  </p> 
+<p> at the sidebar above click on Git, then Clone repository.  <br>  </p> 
+   <br>
+   <p> pick a location folder and then paste the path.  </p> 
+<br>
+   put this on the URL of Git
+   https://github.com/sultan-nassar/Emedicine-Server.git  <br>
+<p>
+<strong> <br>
+<br>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### for frontend side
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p> Open a new VS code (for frontend side)<br>  </p> 
+<p> at the welcome page, click on Clone Git repository.  <br>  </p> 
+   <br>
+   put this on the URL of Git
+    https://github.com/sultan-nassar/Emedicine-Front.git  <br>
+ <br>
+    <p> pick a location folder and then press ok.  </p> 
+<p>
+<strong> at the terminal</strong> you have to navigate to the directory: <br>
+  Cd Emedicine-Front <br>
+<br>
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Usage   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Open your web browser and visit `http://localhost:3000` to access the application.
+2. New User? Go to http://localhost:3000/registration and Enter your personal information in the input fields provided to register the website. 
+3. Already have a user? Go to http://localhost:3000/login and enter your user and password.
+   <br>
+4. <strong> first of all, you must login as an <strong>admin</strong> so you can add medicine or supplements with image, edit or delete medicines, approve user's orders status and more...</strong>
+   To login as an admin you must write:
+   #### <strong> email: admin@gmail.com </strong>
+   #### <strong> password: admin123 </strong>
+   
+  <strong>after login as an admin you can visit:</strong>
+- Medicine Master: her you can add, edit, delete supplements and medicines for your site.
+- User List: her you can see User's List, also you can see all the users whith there Status.
+- Order List: her you can see order List, also you can update the status of the regular user's order to approved or rejected....
+- Products: her you can see all the Products and you can also use filter or search to look for a specific product.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. <strong> second of all, you should login as a <strong>regular user</strong>.
+   To login as a regular user you must write:
+   #### <strong> email: test@gmail.com </strong>
+   #### <strong> password: 1234567 </strong>
+   
+   OR you can make a register before her: http://localhost:3000/registration
+   
+  <strong>after login as a regular user you can visit:</strong>
+- profile: her you can see your personal data.
+- Products: her you can see all the products which the Admin has been added to the site, so you can buy suitable quantity from each product.
+- My Orders: her you can see your orders, also you can see the status of the order if has been approved or rejected by the admin....
+- Cart: her you can see your Cart, also you can delete product or place order, so the admin can see this and he will update the status of the order per regular user.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Customization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You can customize the project to fit your specific needs:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Modify the layout and styling in the `src /components` directory.
+- Extend the functionality by adding new features or components.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it for your own purposes.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgements
 
-### Advanced Configuration
+- This project was inspired by the need for a simple and intuitive E-Commerce app tool.
+- The React framework and its ecosystem made it possible to develop this application quickly and efficiently.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at sultannassar11@gmail.com.
 
-### `npm run build` fails to minify
+Happy designing!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sultan
