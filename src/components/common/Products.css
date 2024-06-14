@@ -1,0 +1,42 @@
+.product-image {
+  width: 120px;
+  height:150px ;
+  object-fit:scale-down;
+}
+
+/* Custom modal width */
+.custom-modal .modal-dialog {
+max-width: 50%; /* Adjust the width as needed */
+}
+
+/* for delete*/
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* Optional: space between cards */
+}
+
+.product-card {
+  display: flex;
+  flex-direction:column;
+  height: 50px;
+
+}
+
+
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  flex-grow: 1;
+}
+
+.product-card .btn-primary {
+  align-self: center;
+  margin-top: auto; /* Ensure button stays at the bottom */
+}
+

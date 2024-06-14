@@ -1,0 +1,73 @@
+/* Ensure full height layout with flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    margin: 0;
+    position: relative; /* Ensure relative positioning for main content */
+    padding-bottom: 20px; /* Adjust padding bottom to accommodate footer height */
+    box-sizing: border-box; /* Include padding in height calculation */
+  }
+  
+  /* Main content wrapper to push footer down */
+  .content-wrapper {
+    flex: 1;
+  }
+  
+  /* Footer styles */
+  .footer {
+    justify-content: center;
+    justify-items: center;
+    background-color: #343a40;
+    color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    /* Ensure footer stays above other content */
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .footer-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: 70px;
+  }
+
+
+  .col-md-12.text-center {
+    /* Your CSS styles here */
+    /* Example: */
+    color: #333;
+    font-size: 18px;
+    bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .text-white{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  .container {
+    width: 100%; /* Ensure it spans the full width of its parent */
+    margin-right: auto; /* Center the container horizontally */
+    margin-left: auto; /* Center the container horizontally */
+    padding-right: 15px; /* Bootstrap's default padding value for containers */
+    padding-left: 15px; /* Bootstrap's default padding value for containers */
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .py-3 {
+    padding-top: 1rem; /* Adjust according to your design */
+    padding-bottom: 1rem; /* Adjust according to your design */
+  }

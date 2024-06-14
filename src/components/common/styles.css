@@ -1,0 +1,15 @@
+/* styles.css */
+.profile-image {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 8px;
+  }
+
+
+/* In your CSS file (e.g., Products.css) */
+.wrapper {
+  min-height: 100vh; /* Ensure wrapper spans entire viewport height */
+  display: flex;
+  flex-direction: column;
+}
